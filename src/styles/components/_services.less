@@ -1,0 +1,57 @@
+.services {
+  font: 300 14px/1.7 'Monserrat', sans-serif;
+  padding-top: 81px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 80px;
+
+  &:hover .folder,
+  &:hover .paper,
+  &:hover .cog,
+  &:hover .pencil {
+    fill: #c7b299;
+  }
+
+  &:hover .title {
+    color: #c7b299;
+  }
+
+  &:hover:after {
+    background: #c7b299;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    margin-left: -35px;
+    width: 70px;
+    height: 3px;
+    background: #ededed;
+    bottom: 0;
+    left: 50%;
+    transition: all .4s;
+  }
+  .pencil {
+    width: 40px;
+    height: 40px;
+  }
+
+  .folder,
+  .paper,
+  .cog,
+  .pencil {
+    fill: #555555;
+    transition: all .4s;
+  }
+
+  .title {
+    font: 600 22px/1.2 'Releway', sans-serif;
+    padding-top: 27px;
+    padding-bottom: 20px;
+    display: inline-block;
+    color: #555555;
+    text-decoration: none;
+    transition: all .4s;
+  }
+}

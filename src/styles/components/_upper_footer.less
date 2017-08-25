@@ -1,0 +1,164 @@
+/*----------------------------------
+// SECTION WAXOM
+-----------------------------------*/
+
+.section-upper-footer-bg {
+  background-color: #191919;
+}
+
+.upper-footer {
+  padding-top: 80px;
+  &-logo {
+    font: 400 34px/1 'Raleway', sans-serif;
+    color: #fff;
+    text-decoration: none !important;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.upper-footer-subtitle {
+  padding-top: 30px;
+  padding-bottom: 143px;
+  &-desc {
+    font: 300 14px/24px 'Monserrat', sans-serif;
+    color: #555555;
+  }
+  &-link {
+    display: inline-block;
+    padding-top: 34px;
+    font: 400 14px/20px 'Monserrat', sans-serif;
+    color: #d1d1d1;
+    text-decoration: none !important;
+    &:hover,
+    &:focus {
+      color: #e1e1e1;
+    }
+    &:after {
+      content: '';
+      //position: absolute;
+      display: inline-block;
+      border: 5px solid transparent;
+      border-left-color: #d1d1d1;
+      width: 5px;
+      height: 8px;
+      margin-left: 10px;
+    }
+  }
+}
+
+/*----------------------------------
+// SECTION POSTS
+-----------------------------------*/
+
+.posts {
+  padding-top: 108px;
+}
+
+.posts-header {
+  display: inline-block;
+  &-title {
+    font: 700 24px/1 'Raleway', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 33px;
+  }
+  &-date {
+    font: 300 12px/20px 'Monserrat', sans-sefir;
+    margin: 0;
+    color: #363636;
+    padding-bottom: 11px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  &-desc {
+    font: 300 14px/20px 'Monserrat', sans-serif;
+    color: #555555;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #555555;
+      margin: 20px 0;
+    }
+  }
+}
+
+.posts-header:hover .posts-header-date {
+   color: #fff;
+}
+
+.posts-header:hover .posts-header-desc {
+  color: #c7b299;
+}
+
+.border-none:after {
+  content: '';
+  border: none;
+}
+
+/*----------------------------------
+// SECTION FEEDS
+-----------------------------------*/
+
+.feeds {
+  padding-top: 108px;
+  &-desc {
+    font: 300 14px/20px 'Monserrat', sans-sefir;
+    margin: 0;
+    padding-bottom: 13px;
+    color: #555555;
+    &-link {
+      color: #00bff3;
+      text-decoration: none !important;
+    }
+  }
+  &-time {
+    color: #363636;
+    font: 300 12px/20px 'Monserrat', sans-sefir;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      border-bottom: 1px solid #555555;
+      margin: 20px 0;
+    }
+  }
+}
+
+.feeds-link {
+  color: #959595;
+  text-decoration: none !important;
+  &:hover {
+    color: #a5a5a5;
+  }
+}
+
+.border-none:after {
+  content: '';
+  border: none;
+}
+
+/*----------------------------------
+// SECTION WIDGET
+-----------------------------------*/
+
+.widget {
+  padding-top: 108px;
+}
+
+.widget-image img {
+  padding-right: 6px;
+  padding-bottom: 10px;
+  max-width: 130px;
+  max-height: 98px;
+}

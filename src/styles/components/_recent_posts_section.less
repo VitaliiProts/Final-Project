@@ -1,0 +1,107 @@
+.section-post {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #f8f8f8;
+  padding-bottom: 80px;
+  &-date {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    padding-top: 20px;
+    padding-left: 20px;
+    transition: all .4s;
+    &-day {
+      font: 300 24px/20px 'Monserrat', sans-serif;
+      font-size: 24px;
+      width: 60px;
+      height: 35px;
+      line-height: 35px;
+      transition: all .4s;
+      background: #363636;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    &-month {
+      font: normal 12px/20px 'Roboto', sans-serif;
+      width: 60px;
+      height: 25px;
+      line-height: 25px;
+      transition: all .4s;
+      background: #252525;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+}
+
+.section-post-date:hover .section-post-date-day{
+  background: #c7b299;
+}
+
+.section-post-date:hover .section-post-date-month {
+  background: #a48d72;
+}
+
+.section-post:hover .section-post-date {
+  background-color: rgba(0,0,0,.7);
+}
+
+.section-post-header {
+  padding-top: 30px;
+  padding-left: 28px;
+  transition: all 0.4s;
+  &-title {
+    font: 500 20px/1 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #555555;
+  }
+  &-desc {
+    font: 300 14px/22px 'Monserrat', sans-serif;
+    margin: 0;
+    padding: 20px 0 28px 0;
+    max-width: 300px;
+    color: #8c8c8c;
+  }
+  &-link {
+    font: 300 14px/20px 'Monserrat', sans-serif;
+    display: inline-block;
+    padding-bottom: 32px;
+    text-decoration: none !important;
+    color: #c7b299;
+    &:after {
+      content: '';
+      display: inline-block;
+      // position: absolute;
+      border: 5px solid transparent;
+      border-left-color: #c7b299;
+      width: 5px;
+      height: 8px;
+      margin-left: 9px;
+    }
+  }
+}
+
+.section-post:hover .section-post-header {
+  background: #362f2d;
+}
+
+.section-post:hover .section-post-header-title {
+  color: #c7b299;
+}
+
+.section-post:hover .section-post-header-desc {
+  color: #fff
+}
+
+.section-post-header-link:hover {
+  color: #c7b299;
+}
+
+.section-post-header-link:visited {
+  color: #c7b299 !important;
+}

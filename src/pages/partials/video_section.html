@@ -1,0 +1,34 @@
+<div class="section bg-video">
+    <div class="container">
+        <a id="play-video" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px" class="video-button">
+                <defs>
+
+                    <filter id="Filter_0">
+                        <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut"/>
+                        <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut"/>
+                        <feBlend mode="normal" in="compOut" in2="SourceGraphic"/>
+                    </filter>
+
+                </defs>
+                <path opacity="0.2"
+                      d="M50.000,-0.000 C77.614,-0.000 100.000,22.386 100.000,50.000 C100.000,77.614 77.614,100.000 50.000,100.000 C22.386,100.000 -0.000,77.614 -0.000,50.000 C-0.000,22.386 22.386,-0.000 50.000,-0.000 Z"/>
+                <g filter="url(#Filter_0)">
+
+                    <path
+                            d="M46.253,33.653 L63.967,48.415 C64.437,48.807 64.709,49.386 64.709,49.997 C64.709,50.609 64.437,51.188 63.967,51.580 L46.253,66.343 C45.876,66.657 45.407,66.820 44.934,66.820 C44.638,66.820 44.339,66.755 44.060,66.626 C43.337,66.287 42.874,65.559 42.874,64.760 L42.874,35.235 C42.874,34.436 43.337,33.708 44.060,33.370 C44.783,33.030 45.640,33.141 46.253,33.653 ZM46.994,60.362 L59.431,49.997 L46.994,39.633 L46.994,60.362 ZM74.759,74.759 C68.033,81.484 59.026,84.998 49.937,84.998 C44.072,84.999 38.173,83.536 32.831,80.528 C31.839,79.970 31.488,78.713 32.046,77.722 C32.604,76.731 33.860,76.379 34.852,76.938 C46.870,83.703 62.082,81.611 71.845,71.845 C83.892,59.798 83.892,40.197 71.845,28.150 C59.798,16.101 40.196,16.102 28.150,28.150 C16.104,40.197 16.104,59.798 28.150,71.845 C28.955,72.650 28.955,73.954 28.150,74.759 C27.347,75.563 26.042,75.563 25.237,74.759 C11.584,61.105 11.584,38.890 25.237,25.236 C38.891,11.584 61.104,11.583 74.759,25.236 C88.412,38.890 88.412,61.105 74.759,74.759 Z"/>
+                </g>
+            </svg>
+        </a>
+        <div class="section-video-header">
+            <h2 class="section-video-header-title">Waxom Video Presentation</h2>
+            <p class="section-video-header-desc">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+            <p class="section-video-header-time">03:26</p>
+        </div>
+
+        <div id="video-overlay" class="video-overlay">
+            <a class="video-overlay-close">&times;</a>
+        </div>
+
+    </div>
+</div>

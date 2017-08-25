@@ -1,0 +1,53 @@
+// Section ideas
+
+.fontBase(@fontW:600, @fontSize: 30px, @lineH: 1.2, @ff:Raleway, @ff-ss:sans-serif, @color: #555) {
+  font: @fontW @fontSize/@lineH @ff, @ff-ss;
+  color: @color;
+}
+
+.bg-section1 {
+  background: #fbfaf8;
+}
+
+.section-heading {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 83px;
+  &-main {
+    .fontBase();
+    display: block;
+    padding-bottom: 24px;
+  }
+  &-desc {
+    .fontBase(@fontW:300, @fontSize: 16px, @lineH: 1.8, @ff:Monserrat, @color: #8c8c8c);
+    display: inline-block;
+    max-width: 757px;
+  }
+}
+
+.img-bg-group {
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------
+// GRADIENT-SECTION
+---------------------------------------------------*/
+
+.gradient-section {
+  background: linear-gradient(to right, rgb(33, 27, 25), rgb(78, 52, 39));
+}
+
+.section-gradient {
+  margin: 0;
+  padding: 50px 0;
+  &-main {
+    .fontBase(@color: #fff, @fontW:normal, @fontSize: 28px);
+    display: block;
+  }
+  &-desc {
+    .fontBase(@fontW:300, @fontSize: 18px, @lineH: 1.2, @ff:Monserrat, @color: #615855);
+  }
+}
+

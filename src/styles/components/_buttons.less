@@ -1,0 +1,48 @@
+.buttonBase(@color: #fff, @bgColor: #998675) {
+  font: 800 14px/1.6 'Raleway', sans-serif;
+  background: @bgColor;
+  padding: 21px 40px 18px 38px;
+  box-shadow: 0 3px 0 0 #736357;
+  color: @color;
+  text-transform: uppercase;
+  outline: none !important;
+  border-radius: 4px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: @color;
+    background: #998675 + #111111;
+    box-shadow: 0 3px 0 0 #736357 + #111111;
+  }
+  &:active {
+    background: #998675 - #111111 !important;
+    box-shadow: 0 3px 0 0 #736357 - #111111;
+  }
+}
+
+.btn-success-1 {
+  .buttonBase();
+}
+
+.btn-control {
+  display: inline-block;
+  padding: 50px 0;
+  .btn-success-2 {
+    .buttonBase();
+    padding: 19px 29px 17px 28px;
+  }
+}
+
+
+
+
+.btn-control2 {
+  display: block;
+  text-align: center;
+  padding: 40px 0 80px;
+  .btn-success-3 {
+    .buttonBase();
+    padding: 19px 46px 17px 44px;
+  }
+}

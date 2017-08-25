@@ -1,0 +1,39 @@
+.wrapper-counter {
+  background: linear-gradient(to right, rgb(33, 27, 25), rgb(78, 52, 39));
+  height: 300px;
+}
+
+.counter {
+  font: 300 14px/20px 'Monserrat', sans-serif;
+  padding-top: 69px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    margin-left: -16px;
+    width: 30px;
+    height: 3px;
+    background: #ededed;
+    bottom: 0;
+    left: 50%;
+    transition: all .4s;
+  }
+
+  &-number {
+    font: 200 48px/36px 'Monserrat', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 21px;
+    display: inline-block;
+    color: #fff;
+  }
+  &-desc {
+    font: 300 14px/20px 'Monserrat', sans-serif;
+    color: #c7b299;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+}

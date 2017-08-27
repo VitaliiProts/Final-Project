@@ -69,3 +69,58 @@ $('.counter-number').each(function () {
     });
 });
 
+/*----------------------------
+// Ajax
+----------------------------*/
+
+var table = document.getElementById('out');
+
+function readAllData() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('get', '/js/data.json');
+    xhr.send();
+    xhr.responseType = 'json';
+    xhr.onreadystatechange = function () {
+        if (this.readyState !== this.DONE) {
+            return;
+        }
+        for (var i = 0; i < this.response.length; i++) {
+            addRow(this.response[i], table);
+        }
+    }
+}
+
+function addRow(todo, table) {
+    var row = document.createElement('tr');
+    row.setAttribute('id', todo.id);
+
+    table.appendChild(row);
+
+    var FullName = document.createElement('td');
+    FullName.innerHTML = todo.FullName;
+
+    var Date = document.createElement('td');
+    Date.innerHTML = todo.Date;
+
+    var Phone = document.createElement('td');
+    Phone.innerHTML = todo.Phone;
+
+    var Email = document.createElement('td');
+    Email.innerHTML = todo.Email;
+
+    var Desc = document.createElement('td');
+    Desc.innerHTML = todo.Desc;
+
+    var Country = document.createElement('td');
+    Country.innerHTML = todo.Country;
+
+
+    row.appendChild(FullName);
+    row.appendChild(Date);
+    row.appendChild(Phone);
+    row.appendChild(Email);
+    row.appendChild(Desc);
+    row.appendChild(Country);
+}
+
+readAllData();

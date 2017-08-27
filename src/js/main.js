@@ -132,3 +132,12 @@ $(function () {
         }
     });
 });
+
+// toggle
+
+var el = document.querySelector('.menu-toggle');
+menuContainer = document.querySelector('.header-menu');
+el.addEventListener('click', function (e) {
+    e.preventDefault();
+    menuContainer.classList.toggle('is-opened')
+});

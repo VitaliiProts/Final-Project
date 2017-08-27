@@ -65,7 +65,7 @@ gulp.task('js:vendor', function () {
         "node_modules/jquery/dist/jquery.js",
         "node_modules/bootstrap/dist/js/bootstrap.js",
         "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js",
-        "node_modules/jquery-validation/dist/jquery.validate.js"
+        "node_modules/jquery-validation/dist/jquery.validate.min.js"
         // "src/js/*.js"
     ])
         .pipe(concat("vendor.min.js"))

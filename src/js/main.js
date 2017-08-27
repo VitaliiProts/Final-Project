@@ -35,7 +35,7 @@ function close_video() {
  ------------------------------*/
 
 $('.counter-number').each(function () {
-    $(this).prop('Counter',0).animate({
+    $(this).prop('Counter', 0).animate({
         Counter: $(this).text()
     }, {
         duration: 4000,
@@ -101,3 +101,34 @@ function addRow(todo, table) {
 }
 
 readAllData();
+
+
+/*---------------------------
+// jquery-validation
+---------------------------*/
+
+//
+$(function () {
+    $('#formid').validate({
+        rules: {
+            email: {
+                required: true,
+                email: true
+            },
+            name: {
+                required: true,
+                minlength: 5
+            }
+        },
+        messages: {
+            email: {
+                require: 'Please enter an email address',
+                email: 'Please enter a <i>valid</i> email address'
+            },
+            name: {
+                require: 'Please enter your name',
+                minlength: 'The length of your name must be at least {0} characters long'
+            }
+        }
+    });
+});

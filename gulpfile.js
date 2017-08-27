@@ -55,6 +55,11 @@ gulp.task('js:app', function () {
         .pipe(gulp.dest('dist/js'))
 });
 
+gulp.task('json', function () {
+    return gulp.src('src/js/data.json')
+        .pipe(gulp.dest('dist/js'))
+});
+
 gulp.task('js:vendor', function () {
     return gulp.src([
         "node_modules/jquery/dist/jquery.js",
@@ -100,7 +105,7 @@ gulp.task('clear', function () {
 });
 
 gulp.task('css', ['css:app', 'css:vendor']);
-gulp.task('js', ['js:app', 'js:vendor']);
+gulp.task('js', ['js:app', 'js:vendor', 'json']);
 gulp.task('assets', ['fonts:app', 'fonts:vendor', 'img']);
 
 gulp.task('build', ['del', 'html', 'css', 'js', 'assets']);

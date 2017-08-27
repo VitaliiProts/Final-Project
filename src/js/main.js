@@ -1,26 +1,3 @@
-/*-----------------------------------------
-// LOGO
--------------------------------------------*/
-var i = 0;
-
-function mask(a) {
-    i++;
-    if (i < a) {
-        $("#logo")
-            .attr("style", "-webkit-mask:-webkit-gradient(radial, 17 17,"
-                + i + ", 17 17, " + (i + 15)
-                + ", from(rgb(0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.2)), to(rgb(0, 0, 0)));");
-
-        setTimeout(function () {
-            mask(a);
-        }, 17 - i);
-    } else i = 0;
-}
-
-$("#logo").on("click", function () {
-    mask(164)
-});
-
 /*---------------------------------------
 // GALLERY
 ----------------------------------------*/

@@ -12,6 +12,7 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
+    "jquery-validation": "^1.17.0",
     "magnific": "0.0.0",
     "magnific-popup": "^1.1.0",
     "popup": "0.0.3"

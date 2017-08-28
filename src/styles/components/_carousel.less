@@ -4,8 +4,6 @@
   height: 100%;
 }
 
-
-
 .carousel-control {
   fill: #a3a2a0;
   &:hover {
@@ -14,6 +12,8 @@
   .arrow-left, .arrow-right {
     position: absolute;
     top: 50%;
+    //right: 0;
+    //left: 0;
   }
 }
 
@@ -50,4 +50,43 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .carousel-control {
+    fill: #a3a2a0;
+    &:hover {
+      fill: #d3c1ad;
+    }
+    .arrow-left, .arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 6px;
+    }
+  }
 
+  .carousel-caption {
+    height: 75%;
+    strong {
+      margin: 0;
+      padding: 0;
+      font: 500 24px/1.2 'Raleway', sans-serif;
+    }
+    h1, h2 {
+      margin: 6px 0 19px 0;
+      font: 800 24px/1.2 'Raleway', sans-serif;
+    }
+    p {
+      display: inline-block;
+      font: 300 16px/1.5  'Monserrat', sans-serif;
+      margin: 0;
+      padding: 0 0 52px 0;
+      max-width: 562px;
+      text-align: center;
+    }
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+
+}

@@ -6,11 +6,10 @@
   height: 100%;
   font-size: 0;
   width: 100%;
-
 }
 
 .footer-list {
-  display: inline-block;
+  display: block;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -60,4 +59,21 @@
 
 .footer-list-link-right:hover {
   color: #a6a6a6;
+}
+
+@media screen and (max-width: 768px) {
+ .footer-item {
+   width: 100%;
+ }
+  .footer-list {
+    display: inline-block;
+    line-height: 10px;
+    text-align: center;
+  }
+  .footer-list-item:after {
+    content: '';
+    display: inline-block;
+    border: none;
+  }
+
 }

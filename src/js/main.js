@@ -18,7 +18,7 @@ $(".img-tab-gallery").magnificPopup({
 $('#play-video').on('click', function (e) {
     e.preventDefault();
     $('#video-overlay').addClass('open');
-    $("#video-overlay").append('<iframe width="1920" height="705" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
+    $("#video-overlay").append('<iframe width="100%" height="705" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
 });
 
 $('.video-overlay, .video-overlay-close').on('click', function (e) {

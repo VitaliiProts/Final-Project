@@ -135,9 +135,15 @@ $(function () {
 
 // toggle
 
-var el = document.querySelector('.menu-toggle');
-menuContainer = document.querySelector('.header-menu');
-el.addEventListener('click', function (e) {
-    e.preventDefault();
-    menuContainer.classList.toggle('is-opened')
+$(document).ready(function () {
+    $('.toggle-menu').click(function () {
+        $('.sidebar-menu').addClass('hide-menu');
+        $('.toggle-menu').addClass('opacity-zero')
+    });
+
+    $('.fa-times').click(function () {
+        $('.sidebar-menu').removeClass('hide-menu');
+        $('.toggle-menu').removeClass('opacity-zero')
+    });
 });
+

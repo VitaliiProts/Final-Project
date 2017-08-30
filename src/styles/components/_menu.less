@@ -33,13 +33,23 @@
   }
 }
 
+.fa-bars,
+.fa-times {
+  display: none;
+}
+
 /*----------------------------------
 // Media
 ----------------------------------*/
 
 @media screen and (max-width: 1200px) {
+  .fa-bars,
+  .fa-times {
+    display: block;
+  }
+
   .toggle-menu {
-    position: fixed;
+    position: absolute;
     margin: 40px;
     color: #999;
     cursor: pointer;
@@ -99,11 +109,11 @@
     font-size: 14px;
     &-item {
       display: block;
-      line-height: 2.1;
+      line-height: 2.4;
     }
     &-link {
       font: 300 20px/1.2 'Monserrat', sans-serif;
-      color: #d4d4d4;
+      color: #fff;
       text-decoration: none;
       width: 100%;
     }

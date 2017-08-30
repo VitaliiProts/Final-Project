@@ -88,8 +88,8 @@ function addRow(todo, table) {
     var Desc = document.createElement('td');
     Desc.innerHTML = todo.Desc;
 
-    var Country = document.createElement('td');
-    Country.innerHTML = todo.Country;
+    // var Country = document.createElement('td');
+    // Country.innerHTML = todo.Country;
 
 
     row.appendChild(FullName);
@@ -97,7 +97,7 @@ function addRow(todo, table) {
     row.appendChild(Phone);
     row.appendChild(Email);
     row.appendChild(Desc);
-    row.appendChild(Country);
+    // row.appendChild(Country);
 }
 
 readAllData();

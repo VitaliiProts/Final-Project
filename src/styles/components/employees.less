@@ -1,41 +1,104 @@
 .employees-bg {
-  background: url("../../images/seigaiha.png") repeat;
+  background: white ;
 }
 
-.employees-header {
-  font-family: cursive;
-  font-size: 35px;
+//.employees-header {
+//  font-family: cursive;
+//  font-size: 35px;
+//  text-align: center;
+//  padding-bottom: 30px;
+//}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
   text-align: center;
-  padding-bottom: 30px;
 }
-
-.decorated-table {
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  //text-align: center;
+table tr {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
 }
-
-.header-row {
-  background: #666;
-  color: white;
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
 }
-
-.employees-back {
-  display: inline-block;
-  font-size: 16px;
-  padding-top: 10px;
-  color: #777;
-  text-decoration: none !important;
-  &:before {
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 5px;
-    content: '';
-    border: 6px solid transparent;
-    border-right-color: #777;
-    font-size: 16px;
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  table {
+    border: 0;
+    width: 100%;
   }
-  &:hover {
-    color: #999;
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    text-align: left;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: left;
+  }
+  table td:before {
+    content: '';
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  table {
+    border: 0;
+    width: 100%;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    text-align: left;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: left;
+  }
+  table td:before {
+    content: '';
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  table td:last-child {
+    border-bottom: 0;
   }
 }
